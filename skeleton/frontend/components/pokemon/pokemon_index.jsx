@@ -22,13 +22,13 @@ class PokemonIndex extends React.Component {
       );
     } else {
       return (
-        <div>
+        <div className="section-container">
           <section className="pokemon-list-container">
             <ul className="pokemon-list">
               {pokemonList}
             </ul>
           </section>
-          <section>
+          <section className="pokemon-detail-container">
             {this.props.children}
           </section>
         </div>
